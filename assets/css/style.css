@@ -1,0 +1,152 @@
+/* Layout body  */
+
+.container{
+    width: 53%;
+    background-color: rgba(255, 255, 255, 0.836);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-image: url("https://cdn.discordapp.com/attachments/1059773347724021853/1060584816690593862/29303158_GNDe4Z1Nd94WygN.png");
+    background-position: top left;
+}
+/* LOGO and SLOGAN */
+
+header img {
+    height:200px;
+}
+
+header p {
+    text-align: right;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo p{
+    width:100%;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+}
+
+.logo img{
+    max-width: 50%;
+    height: auto;
+}
+
+/* Background NAVIGATION and FOOTER */
+
+nav, footer {
+    background-color: black;
+    align-items: center;
+    display: flex;
+}
+
+/* Layout LISTE NAV and FOOTER*/
+label, #toggle{
+    display: none;
+}
+
+nav li, footer li {
+    display: inline;
+    padding: 5px;
+}
+
+nav ul, footer ul{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 100px;
+}
+
+nav a, footer a {
+    color:white;
+}
+
+/* IMAGE PROMO */
+
+.promo img{
+    width: 100%;
+   }
+
+/* layout CONTENU (ARTICLE + ASIDE) */
+
+aside {
+    background-color: rgb(32, 102, 194);
+    width: 45%;
+}
+
+.overall {
+    display:flex;
+}
+
+aside p {
+    margin:0px;
+}
+
+/*Table */
+
+.Martine{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    border: 5px solid rgb(255, 120, 248);
+    width: 50%;
+    border-collapse: collapse;
+    height: auto;
+}
+
+table tr td, table tr th{
+    text-align: center;
+    border: 4px solid rgb(255, 240, 36);
+}
+
+td img{
+    height: 100px;
+}
+
+/* FORM */
+fieldset div{
+    display: inline;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px)
+{
+    #colonne {
+    display: none;
+    }
+
+    html {
+        font-size: 100%;
+    }
+    h1 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 2vw;
+    }
+    h1, h2, h3, h4 {
+        font-size: 3vw;
+    }
+    table{
+        table-layout: fixed;
+        width: 100%;
+    }
+    
+    nav ul{
+        text-align: left;
+        display: flex;
+        flex-flow:column;
+    }
+    
+}
+/* Dédi a sara de l'aide qu'elle ma donné */
